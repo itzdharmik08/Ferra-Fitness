@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferra Fitness</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo"><img src="images/logo.png" alt="Ferra Fitness" class="logo-img"></a>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="navMenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Personal Training</a></li>
+      <li><a href="#program">Online Training</a></li>
+      <li><a href="#transformations">Success Stories</a></li>
+      <li><a href="#press">Press Archive</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#blog">Blog</a></li>
+
+      <li><a href="#contact" class="nav-cta">Get Your Free Consultation</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="eyebrow">Premium Transformation Coaching</div>
+      <h1>Elite Coaching<br>Built for Strength, <br>Performance, and Longevity</h1>
+      <p class="hero-sub">
+        Personalized 1:1 coaching focused on building strength, performance, and long term results through proven training and nutrition strategies tailored to your goals.
+      </p>
+      <div class="hero-btns">
+        <a href="#services" class="btn-primary">Find services<span class="arrow">→</span></a>
+        <a href="#contact" class="btn-primary">Get Your Free Consultation<span class="arrow">→</span></a>
+        <a href="#results" class="btn-ghost">See Transformations ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-visual">
+        <div class="hero-img-placeholder">
+          <img src="images/hero.webp" alt="Hero Image">
+        </div>
+        <div class="hero-stat-overlay">
+          <div class="num">500+</div>
+          <div class="label">Transformations</div>
+        </div>
+        <div class="hero-tag">Proven System</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      <span>Fat Loss</span><span class="ticker-dot">✦</span>
+      <span>Muscle Gain</span><span class="ticker-dot">✦</span>
+      <span>Body Transformation</span><span class="ticker-dot">✦</span>
+      <span>1-on-1 Coaching</span><span class="ticker-dot">✦</span>
+      <span>90-Day Results</span><span class="ticker-dot">✦</span>
+      <span>Custom Nutrition Plans</span><span class="ticker-dot">✦</span>
+      <span>Elite Programming</span><span class="ticker-dot">✦</span>
+      <span>Fat Loss</span><span class="ticker-dot">✦</span>
+      <span>Muscle Gain</span><span class="ticker-dot">✦</span>
+      <span>Body Transformation</span><span class="ticker-dot">✦</span>
+      <span>1-on-1 Coaching</span><span class="ticker-dot">✦</span>
+      <span>90-Day Results</span><span class="ticker-dot">✦</span>
+      <span>Custom Nutrition Plans</span><span class="ticker-dot">✦</span>
+      <span>Elite Programming</span><span class="ticker-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section style="background:var(--surface);" id="about">
+    <div class="about-section">
+      <div>
+        <div class="about-photo">
+          <img src="images/hero1.jpg" alt="Ferra Fitness Coach" class="about-photo-img">
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-label">The Coach</div>
+        <h2>WHO IS<br>BEHIND THIS</h2>
+        <div class="about-tagline">40+ Years. 500+ Clients. Zero Shortcuts.</div>
+
+        <p class="about-body">
+          I wasn’t always the coach people know today. I started competing in bodybuilding as a teenager in 1986 and decades later, 
+          I am still competing at the highest level in my 50s. Over the years, I became known as “the trainer to the trainers” by mentoring fitness professionals and helping clients build lasting strength, discipline, and confidence.
+        </p>
+        <p class="about-body">
+          My journey has taken me from Melbourne to New York, earning titles including AAU Natural Mr. Universe Masters Champion, IFBB Natural North American Champion, 
+          and NABBA Mr. Australia. I have spent years refining my approach through real world experience in bodybuilding, nutrition, athletic performance, and coaching.
+        </p>
+        <p class="about-body">
+          Beyond competition, I hold a Bachelor of Physical Education and multiple certifications in fitness coaching, sports performance, nutrition, and personal fitness chef training. 
+          My coaching combines elite level training knowledge with practical nutrition strategies built from decades inside the industry.
+        </p>
+        <p class="about-body">
+          I work with a limited number of clients to ensure every program is personalized, results driven, and built for long term success.
+        </p>
+
+        <div class="credentials">
+          <div class="credential">AAU Natural Mr. Universe Champion</div>
+          <div class="credential">IFBB Natural Champion</div>
+          <div class="credential">40+ Years Experience</div>
+          <div class="credential">Trainer to Trainers</div>
+          <div class="credential">Dual Australian & US Citizen</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- COACHING SERVICES -->
+  <section class="services-section" id="services">
+    <div class="services-header">
+      <div class="section-label1">WHAT I OFFER</div>
+      <h2>COACHING <span class="highlight">SERVICES</span></h2>
+    </div>
+
+    <div class="services-grid">
+      <!-- Card 1: Online Coaching -->
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/online-c.jpg" alt="Online Coaching">
+        </div>
+        <h3 class="service-title">ONLINE COACHING</h3>
+        <p class="service-desc">Online personal training has become a great opportunity recently. Not only does it keep you safe at home, but also you have the opportunity to work with some great personal trainers. I would love the opportunity to help you achieve your fitness goals!
+Let my experience as a former Mr. Australia, Master Trainer and Personal Chef help create an effective, custom online coaching program for you.
+</p>
+        <a href="#contact" class="service-link">GET STARTED →</a>
+      </div>
+
+      <!-- Card 2: Posing Coaching -->
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/personal-c.webp" alt="Posing Coaching">
+        </div>
+        <h3 class="service-title">Personal Training</h3>
+        <p class="service-desc">If you are looking for a personal trainer in NYC, let me assure you we can do it safely either outdoors or at the gym. 
+We can schedule personal training sessions a la carte or in blocks. However, many of my clients have seen great progress with these packages below.  All courses include a comprehensive fitness and body assessment and a customized workout & nutrition program. Book today and never look back!
+</p>
+        <a href="#contact" class="service-link">BOOK SESSION →</a>
+      </div>
+
+      <!-- Card 3: Nutrition Plans -->
+      <div class="service-card">
+        <div class="service-image">
+          <img src="images/35-min.webp" alt="Nutrition Plans">
+        </div>
+        <h3 class="service-title">The 35 Minute Workout</h3>
+        <p class="service-desc">The 35 minute workout is a high intensity body part specific workout with little rest designed to get you into great shape quickly. Over the course of my fitness career, I have learned that less is more when it comes to sculpting and transforming your body. You might be surprised how training for just  35 minutes, 4 days a week for 12 weeks can transform your body.</p>
+        <a href="#contact" class="service-link">LEARN MORE →</a>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL SECTION -->
+  <section class="testimonial-hero-section">
+    <div class="testimonial-hero-bg">
+      <img src="images/bg.webp" alt="Training Background">
+    </div>
+    <div class="testimonial-hero-overlay"></div>
+    <div class="testimonial-hero-content">
+      <div class="testimonial-logo">
+        <img src="images/logo.png" alt="Ferra Fitness Logo">
+      </div>
+      <blockquote class="testimonial-quote">
+        “My clients want to stay lean while keeping their muscles strong, shapely and firm, and the best way to do that is with smart, quick and intense workouts. We can do this safely online. If you are in NYC, we can also train outdoors or at the gym when it reopens.”
+      </blockquote>
+      <div class="testimonial-attribution">
+        <span class="attribution-name">Gennaro Ferra</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STATS / SOCIAL PROOF -->
+  <section class="stats-section" id="results">
+    <div class="section-label section-label-center1" style="padding:0 5vw 0; margin-bottom:0">Social Proof</div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">500+<span class="stat-unit">+</span></div>
+        <div class="stat-label">Clients Transformed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">92<span class="stat-unit">%</span></div>
+        <div class="stat-label">Hit Goal Within 90 Days</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">40+<span class="stat-unit">+</span></div>
+        <div class="stat-label">Years Coaching Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4.5<span class="stat-unit">★</span></div>
+        <div class="stat-label">Average Client Rating</div>
+      </div>
+    </div>
+  </section>
+
+   <!-- TRANSFORMATIONS GALLERY -->
+  <section class="transformations-section" id="transformations">
+    <div class="section-label section-label-center1">Real Results</div>
+    <h2>CLIENT<br><span class="highlight">TRANSFORMATIONS</span></h2>
+
+    <div class="transformations-grid">
+      <!-- Card 1 -->
+      <div class="transformation-card">
+        <div class="transformation-images">
+          <img src="images/c1.webp" alt="Bobby Before After" class="transformation-img">
+        </div>
+        <div class="transformation-info">
+          <h4 class="client-name">BOBBY'S 1 MONTH BODY TRANSFORMATION</h4>
+          <p class="client-results">Bobby's 30 day body transformation was an amazing journey for both of us. Being an online entrepreneur and with transfer to different city, workout and nutrition program strictly and the results were life changing. In just 30 days, Bobby continues to adhere to my program, multiplies and strategies and he's more fitter, stronger and healthier.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="transformation-card">
+        <div class="transformation-images">
+          <img src="images/c2.webp" alt="Will Before After" class="transformation-img">
+        </div>
+        <div class="transformation-info">
+          <h4 class="client-name">WILL'S 12 WEEK BODY TRANSFORMATION</h4>
+          <p class="client-results">Will approached me for camp prep coaching and we were able to get him in his best condition within 16 weeks of competing in his first ever natural bodybuilding show in which he placed first. With's natural flair and fitness helped accelerate his shape and definition on stage and in the day to continue food hard and smart and maintain his lean, strong and healthy physique!</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="transformation-card">
+        <div class="transformation-images">
+          <img src="images/c3.webp" alt="Michael Before After" class="transformation-img">
+        </div>
+        <div class="transformation-info">
+          <h4 class="client-name">MICHAEL'S 12 WEEK BODY TRANSFORMATION</h4>
+          <p class="client-results">Michael came to me and I was delighted to offer my 12 weeks for my nutrition and workout program brought his body fat from 23% to 14%, he's 46 year old figure which is great proof that you can get stronger, leaner and healthier reaching a ripped physique lifting with high intensity through training coupled with my Primalized protocol.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="transformation-card">
+        <div class="transformation-images">
+          <img src="images/c4.webp" alt="Mathew Before After" class="transformation-img">
+        </div>
+        <div class="transformation-info">
+          <h4 class="client-name">MATHEW'S 12 WEEK BODY TRANSFORMATION</h4>
+          <p class="client-results">Mathew came to me with a clear goal that he wanted to compete in his very first natural bodybuilding show. With continuous hard work for the challenge and brought his body weight down from 93kgs to 88kg. Good and ready for the stage! After 12 weeks of working out 6 days a week with continuous posing practice and nutritional direction Mathew took 3rd place in ICN European Championships. Mathew continues to implement by taking control of what he eats and the quantity, maintaining and perfecting his physique.</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="transformation-card">
+        <div class="transformation-images">
+          <img src="images/c5.webp" alt="Avanell Before After" class="transformation-img">
+        </div>
+        <div class="transformation-info">
+          <h4 class="client-name">AVANELL'S 12 WEEK BODY TRANSFORMATION</h4>
+          <p class="client-results">Avanell came to me and together only in just 7 weeks of training with me and got his body fat percentage down to 8%, his goal was to enter the first physique competition which he did placing 4th in the NPC Southern States Championships after 12 weeks of high intensity Primal Hybrid Training along with my signature Primalized protocol. Avanell continues to train and maintain a lean and muscular physique year round!</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="transformation-card">
+        <div class="transformation-images">
+          <img src="images/c6.webp" alt="Waldo Before After" class="transformation-img">
+        </div>
+        <div class="transformation-info">
+          <h4 class="client-name">WALDO'S 12 WEEK BODY TRANSFORMATION</h4>
+          <p class="client-results">We initially started working with Waldo when he was going for a successful at reintroducing his body to my 16 week program. We stay very dedicated to my workout and nutrition program from day 1, dropping from 16% body fat to 12%, waistline shrunk from 36 inches to 34 inches and chest shot down 50.2 inches. Waldo continues to work with me and train to his names on the NPC Muscle Beach and Thierry Equinox. Small but with the right amount of discipline and passion plus has been a true pleasure to train!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="section-label section-label-center">Client Results</div>
+    <h2>WHAT THEY<br>ACTUALLY SAY</h2>
+
+    <div class="testimonials-swiper">
+      <div class="swiper-track">
+        <!-- Card 1 -->
+        <div class="testimonial-card swiper-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "I'd been training for 4 years with zero visible abs. Within 14 weeks I dropped 18 lbs of pure fat and
+            finally had the physique I always thought was out of reach. The programming is next level."
+          </p>
+          <div class="testimonial-author">
+            <div class="avatar">JM</div>
+            <div>
+              <div class="author-name">James M.</div>
+              <div class="author-meta">Software Engineer, 29 — Lost 18 lbs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card swiper-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "As a busy professional I thought I couldn't commit. The flexibility in the program proved me wrong. I added
+            12 lbs of muscle in 16 weeks while working 60-hour weeks. No excuses accepted."
+          </p>
+          <div class="testimonial-author">
+            <div class="avatar">RK</div>
+            <div>
+              <div class="author-name">Raj K.</div>
+              <div class="author-meta">Finance Director, 35 — Gained 12 lbs muscle</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card swiper-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The nutrition protocol alone was worth 10x what I paid. I went from skinny-fat to genuinely athletic in 12
+            weeks. People at work keep asking what I'm doing differently. Confidence is through the roof."
+          </p>
+          <div class="testimonial-author">
+            <div class="avatar">DT</div>
+            <div>
+              <div class="author-name">Daniel T.</div>
+              <div class="author-meta">Teacher, 24 — Complete body recomp</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="testimonial-card swiper-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "At 42 I thought my best years were behind me. This program completely changed my mindset. I'm stronger now
+            than I was in my 20s and I have the energy to keep up with my kids."
+          </p>
+          <div class="testimonial-author">
+            <div class="avatar">MP</div>
+            <div>
+              <div class="author-name">Michael P.</div>
+              <div class="author-meta">Entrepreneur, 42 — Rebuilt at 40+</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="testimonial-card swiper-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "After two kids, I never thought I'd get my pre-baby body back. Six months later I'm in the best shape of my
+            life. The coaching is personal, accountable, and actually works."
+          </p>
+          <div class="testimonial-author">
+            <div class="avatar">SL</div>
+            <div>
+              <div class="author-name">Sarah L.</div>
+              <div class="author-meta">Marketing Manager, 34 — Postpartum transformation</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicates for seamless loop -->
+        <div class="testimonial-card swiper-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "I'd been training for 4 years with zero visible abs. Within 14 weeks I dropped 18 lbs of pure fat and
+            finally had the physique I always thought was out of reach. The programming is next level."
+          </p>
+          <div class="testimonial-author">
+            <div class="avatar">JM</div>
+            <div>
+              <div class="author-name">James M.</div>
+              <div class="author-meta">Software Engineer, 29 — Lost 18 lbs</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card swiper-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "As a busy professional I thought I couldn't commit. The flexibility in the program proved me wrong. I added
+            12 lbs of muscle in 16 weeks while working 60-hour weeks. No excuses accepted."
+          </p>
+          <div class="testimonial-author">
+            <div class="avatar">RK</div>
+            <div>
+              <div class="author-name">Raj K.</div>
+              <div class="author-meta">Finance Director, 35 — Gained 12 lbs muscle</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card swiper-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "The nutrition protocol alone was worth 10x what I paid. I went from skinny-fat to genuinely athletic in 12
+            weeks. People at work keep asking what I'm doing differently. Confidence is through the roof."
+          </p>
+          <div class="testimonial-author">
+            <div class="avatar">DT</div>
+            <div>
+              <div class="author-name">Daniel T.</div>
+              <div class="author-meta">Teacher, 24 — Complete body recomp</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="swiper-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      <span class="dot" data-index="4"></span>
+    </div>
+  </section>
+
+
+
+  <!-- PROGRAM -->
+  <section class="program-section" id="program">
+    <div class="program-header">
+      <div>
+        <div class="section-label">The System</div>
+        <h2>WHAT YOU<br>GET</h2>
+      </div>
+      <div>
+        <p class="program-intro">
+          Every component of our coaching system is engineered around one goal: getting you a dramatically better
+          physique as fast as humanly possible. No fluff, no templates, no cookie-cutter nonsense.
+        </p>
+      </div>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-num">01</div>
+        <div class="feature-title">Fully Custom Training Plan</div>
+        <p class="feature-desc">Written specifically for your body, goals, schedule, and available equipment. Updated
+          every 4 weeks as you progress. Not a template — never a template.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">02</div>
+        <div class="feature-title">Precision Nutrition Protocol</div>
+        <p class="feature-desc">Calorie targets, macro breakdowns, meal timing, and flexible food choices that fit your
+          life. You'll eat real food and still shred fat.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">03</div>
+        <div class="feature-title">Weekly 1-on-1 Check-ins</div>
+        <p class="feature-desc">Private video or voice check-ins every week. Review progress photos, data, and adjust
+          the plan in real time. Zero ghosting, always responsive.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">04</div>
+        <div class="feature-title">24/7 Direct Messaging</div>
+        <p class="feature-desc">Direct access to your coach via private chat. Questions answered same day. Never get
+          stuck, confused, or left behind.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">05</div>
+        <div class="feature-title">Progress Tracking System</div>
+        <p class="feature-desc">Structured weekly data submission — weight, measurements, photos, lifts. You can see
+          your transformation happening in real time.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">06</div>
+        <div class="feature-title">Mindset & Lifestyle Coaching</div>
+        <p class="feature-desc">Sustainable habits, stress management, sleep optimization, and the mental edge that
+          separates men who transform from those who quit.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag justify-content-center">Media Gallery</div>
+        <h2 class="section-title">Training <em>Moments</em></h2>
+        <div class="section-divider center"></div>
+        <p class="text-muted" style="max-width:560px;margin:0 auto;font-size:0.95rem;">See the intensity, dedication,
+          and results that define my coaching approach.</p>
+      </div>
+
+      <!-- Masonry Gallery -->
+      <div class="masonry-grid">
+        <!-- Image 1 -->
+        <div class="masonry-item" data-type="image">
+          <div class="gallery-item">
+            <img src="images/win.webp" alt="Training session" class="gallery-img">
+          </div>
+        </div>
+        <!-- Video 1 -->
+        <div class="masonry-item" data-type="video">
+          <div class="gallery-item video-item">
+            <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+              <source src="images/v1.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="masonry-item" data-type="video">
+          <div class="gallery-item video-item">
+            <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+              <source src="images/v2.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="masonry-item" data-type="image">
+          <div class="gallery-item">
+            <img src="images/i2.jpg" alt="Posing practice" class="gallery-img">
+          </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="masonry-item" data-type="video">
+          <div class="gallery-item video-item">
+            <video autoplay muted loop playsinline class="w-full h-auto rounded-2xl">
+              <source src="images/v3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="masonry-item" data-type="image">
+          <div class="gallery-item">
+            <img src="images/i3.jpg" alt="Posing practice" class="gallery-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FUNNEL -->
+  <!-- BOOKING / CONTACT -->
+  <section class="booking-section" id="contact">
+    <div class="booking-inner">
+      <div class="booking-header">
+        <div class="section-label section-label-center1">Start Your Journey</div>
+        <h2>BOOK YOUR<br><em>FREE CONSULTATION</em></h2>
+        <p class="booking-subtitle">Take the first step toward your transformation. Fill out the form below and I'll get
+          back to you within 24 hours to schedule your session.</p>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <!-- Name Row -->
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="firstName" name="firstName" placeholder=" " required>
+            <label for="firstName">First Name</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="lastName" name="lastName" placeholder=" " required>
+            <label for="lastName">Last Name</label>
+          </div>
+        </div>
+
+        <!-- Contact Row -->
+        <div class="form-row">
+          <div class="form-group form-group-wide">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Email Address</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group form-group-wide">
+            <input type="tel" id="phone" name="phone" placeholder=" " required>
+            <label for="phone">Phone Number</label>
+          </div>
+        </div>
+
+        <!-- Coaching Type - Multi Select -->
+        <div class="form-row">
+          <div class="form-group form-group-wide">
+            <div class="multi-select" id="coachingTypeMulti">
+              <div class="multi-select-trigger">
+                <span class="multi-select-placeholder">Coaching Type</span>
+                <span class="multi-select-arrow">▼</span>
+              </div>
+              <div class="multi-select-dropdown">
+                <div class="multi-select-option" data-value="performance">Performance (EG. Ergs/ Strength / Hybrid)</div>
+                <div class="multi-select-option" data-value="fat-loss">Fat loss / get lean</div>
+                <div class="multi-select-option" data-value="general-fitness">General fitness & confidence</div>
+              </div>
+              <div class="multi-select-chips"></div>
+              <input type="hidden" id="coachingType" name="coachingType" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Goal & Training Days -->
+        <div class="form-row">
+          <div class="form-group">
+            <select id="primaryGoal" name="primaryGoal" required>
+              <option value="" disabled selected>Primary Goal</option>
+              <option value="fat-loss">Fat Loss</option>
+              <option value="muscle-gain">Muscle Gain</option>
+              <option value="body-recomp">Body Recomposition</option>
+              <option value="athletic">Athletic Performance</option>
+              <option value="health">General Health</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select id="trainingDays" name="trainingDays" required>
+              <option value="" disabled selected>Training Days</option>
+              <option value="2">2 days</option>
+              <option value="3">3 days</option>
+              <option value="4">4 days</option>
+              <option value="5">5 days</option>
+              <option value="6">6 days</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Preferred Times -->
+        <div class="form-row">
+          <div class="form-group form-group-wide">
+            <select id="preferredTime" name="preferredTime" required>
+              <option value="" disabled selected>Preferred Session Time</option>
+              <option value="morning">Morning (6am - 12pm)</option>
+              <option value="afternoon">Afternoon (12pm - 5pm)</option>
+              <option value="evening">Evening (5pm - 9pm)</option>
+              <option value="weekend">Weekends Only</option>
+              <option value="flexible">Flexible</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Start Date -->
+        <div class="form-row">
+          <div class="form-group form-group-wide">
+            <input type="date" id="startDate" name="startDate" required>
+            <label for="startDate">Preferred Start Date</label>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="form-row">
+          <div class="form-group form-group-wide">
+            <textarea id="message" name="message" rows="4"></textarea>
+            <label for="message">Tell me about your fitness background and goals (optional)</label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="booking-submit">
+          <span>SUBMIT APPLICATION</span>
+          <span class="arrow">→</span>
+        </button>
+
+        <p class="booking-note">Limited spots available. Applications reviewed within 24 hours.</p>
+      </form>
+
+      <!-- Success Message -->
+      <div class="booking-success" id="bookingSuccess" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h3>Application Received!</h3>
+        <p>Thank you for your interest. I'll review your application and contact you within 24 hours to schedule your
+          free consultation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="faq-section">
+      <div class="faq-header">
+        <div class="section-label section-label-center1">Common Questions</div>
+        <h2>FAQ</h2>
+        <p style="color:var(--muted);margin-top:1rem;font-size:1rem;line-height:1.7;">
+          Every question you're thinking — answered directly.
+        </p>
+      </div>
+
+      <div class="faq-item open">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How fast will I see results?
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Most clients notice visible changes within the first 3–4 weeks. Significant transformation — the kind that
+            turns heads — typically takes 10–16 weeks depending on your starting point and consistency. We will be
+            honest with you upfront about what's realistic for your body and timeline.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Do I need a gym membership or equipment?
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Gym access gives you the best results, but we can absolutely write programs around a home setup with
+            minimal equipment. Your program is built around what YOU have available — this is stated clearly in your
+            application.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          I'm a complete beginner — is this right for me?
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Yes. Beginners often see the most dramatic transformations because their bodies respond so strongly to a
+            well-structured program. We start where you are and build from there. No experience required — just
+            commitment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          I'm really busy. Will I have time for this?
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Our busiest clients — CEOs, doctors, engineers working 60+ hour weeks — have gotten incredible results. We
+            design your training around your actual schedule. Three 45-minute sessions per week is often enough to
+            produce dramatic changes when the programming is dialed in.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What's the cost of coaching?
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Pricing is discussed on the strategy call after your application is approved. What we can say: it's a
+            significant investment in yourself, and every client who commits fully gets results that justify that
+            investment many times over. We don't publish pricing publicly because every program is custom-built.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What if I don't see results?
+          <div class="faq-toggle">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>If you follow the program as prescribed and don't see meaningful progress, we'll work with you at no extra
+            cost until you do. In 8 years of coaching, this has never happened when a client followed the plan with
+            genuine effort. Results are not optional — they're the whole point.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo-f">Ferra Fitness</a>
+        <p>Premium 1-on-1 online fitness coaching for men who are serious about transforming their physique. Real
+          results. No shortcuts.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#program">The Program</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#apply">Apply Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Programs</h5>
+        <ul>
+          <li><a href="#">Fat Loss</a></li>
+          <li><a href="#">Muscle Building</a></li>
+          <li><a href="#">Body Recomp</a></li>
+          <li><a href="#">Beginner Plan</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Email Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ferra Fitness. All rights reserved. <a href="#">Privacy Policy</a></p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/ferra_fitness/" target="_blank" class="social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@ferra_fitness" target="_blank" class="social-link" aria-label="YouTube">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/ferrafitness" target="_blank" class="social-link" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/4471234567890?text=Hi%20there!%20I'm%20interested%20in%20your%20coaching%20services" 
+     class="whatsapp-btn" 
+     target="_blank" 
+     aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
