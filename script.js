@@ -368,37 +368,51 @@ document.querySelectorAll('.stat-item').forEach(el => counterObserver.observe(el
 
     // Collect form data
     const formData = new FormData(bookingForm);
-    const bookingData = {
-      firstName: formData.get('firstName'),
-      lastName: formData.get('lastName'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      coachingType: formData.get('coachingType'),
-      primaryGoal: formData.get('primaryGoal'),
-      trainingDays: formData.get('trainingDays'),
-      preferredTime: formData.get('preferredTime'),
-      startDate: formData.get('startDate'),
-      message: formData.get('message'),
-      submittedAt: new Date().toISOString()
-    };
 
-    // Simulate form submission (replace with actual API call)
-    console.log('Booking submitted:', bookingData);
+    // Button loading state
+    const submitBtn = bookingForm.querySelector('button[type="submit"]');
+    const originalBtnHTML = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span>SENDING…</span>';
 
-    // Show success message
-    bookingForm.style.display = 'none';
-    bookingSuccess.style.display = 'block';
+    // Submit to Formspree
+    fetch(bookingForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        // Show success message
+        bookingForm.style.display = 'none';
+        bookingSuccess.style.display = 'block';
+        bookingSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-    // Scroll to success message
-    bookingSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-    // Optional: Reset form after delay
-    setTimeout(() => {
-      bookingForm.reset();
-      bookingForm.querySelectorAll('.form-group').forEach(g => {
-        g.classList.remove('valid', 'error');
-      });
-    }, 3000);
+        // Reset form after delay
+        setTimeout(() => {
+          bookingForm.reset();
+          bookingForm.style.display = '';
+          bookingSuccess.style.display = 'none';
+          bookingForm.querySelectorAll('.form-group').forEach(g => {
+            g.classList.remove('valid', 'error');
+          });
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+        }, 5000);
+      } else {
+        return response.json().then(data => {
+          const errMsg = (data.errors || []).map(e => e.message).join(', ') || 'Submission failed. Please try again.';
+          alert(errMsg);
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+        });
+      }
+    })
+    .catch(() => {
+      alert('Network error. Please check your connection and try again.');
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnHTML;
+    });
   });
 
   // Shake animation CSS injection
