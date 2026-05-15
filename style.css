@@ -539,8 +539,13 @@ h1 span {
 .testimonial-logo img {
   max-width: 100%;
   height: auto;
-  width: 280px; /* Keep the logo to a reasonable size */
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .testimonial-logo img {
+    width: 280px;
+  }
 }
 
 .testimonial-logo .logo-main {
